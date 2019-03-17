@@ -53,14 +53,16 @@ public abstract class TeamMarkerRun extends StandardChassis {
 
         if (madeTheRun == false) {
 
-            encoderDrive(52, 52);
+            //descendFromLander();
+
+            encoderDrive(42, 42);
 
             dropFlag();
             sleep(3000);
-            angleHand = 0.5;
+            angleHand = 0.75;
             flagHolder.setPosition(angleHand);
 
-            turnRight(125);
+            turnRight(118);
             encoderDrive(90, 90);
 
             madeTheRun = true;
